@@ -8,7 +8,7 @@ Homepage: http://pault.ag/
 
 Package: hairycandy-base
 Architecture: all
-Depends: ${shlibs:Depends}, ${misc:Depends}, ${hairy:Depends}
+Depends: ${shlibs:Depends}, ${misc:Depends}, ${hairy:Depends}, python
 Description: metapackage for the base packages
  This package is a metapackage for the hairycandy setup.
  Really, this is just filler-text, you don't have to pay too much

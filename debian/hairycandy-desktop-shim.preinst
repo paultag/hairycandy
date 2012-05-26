@@ -1,0 +1,21 @@
+#!/bin/sh
+
+set -e
+
+case "$1" in
+    install)
+        echo "Adding diversion."
+        dpkg-divert --package hairycandy-desktop-shim --add --rename \
+                    --divert /usr/bin/awesome.real /usr/bin/awesome
+    ;;
+    upgrade)
+    ;;
+    abort-upgrade)
+    ;;
+    *)
+        echo "preinst called with unknown argument \`$1'" >&2
+        exit 0
+    ;;
+esac
+
+#DEBHELPER#

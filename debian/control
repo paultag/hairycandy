@@ -1,0 +1,37 @@
+Source: hairycandy
+Section: misc
+Priority: optional
+Maintainer: Paul Tagliamonte <paultag@ubuntu.com>
+Build-Depends: debhelper (>= 9)
+Standards-Version: 3.9.3
+Homepage: http://pault.ag/
+
+Package: hairycandy-base
+Architecture: all
+Depends: ${shlibs:Depends}, ${misc:Depends}, ${hairy:Depends}
+Description: metapackage for the base packages
+ This package is a metapackage for the hairycandy setup.
+ Really, this is just filler-text, you don't have to pay too much
+ mind to all this. Don't worry about it.
+ .
+ Extra line to trick lintian.
+
+Package: hairycandy-devel
+Architecture: all
+Depends: ${shlibs:Depends}, ${misc:Depends}, ${hairy:Depends}
+Description: metapackage for the development setup
+ This package is a metapackage for the hairycandy setup.
+ Really, this is just filler-text, you don't have to pay too much
+ mind to all this. Don't worry about it.
+ .
+ Extra line to trick lintian.
+
+Package: hairycandy-desktop-shim
+Architecture: all
+Depends: ${shlibs:Depends}, ${misc:Depends}, ${hairy:Depends}
+Description: shim for the development setup
+ This package is a metapackage for the hairycandy setup.
+ Really, this is just filler-text, you don't have to pay too much
+ mind to all this. Don't worry about it.
+ .
+ Extra line to trick lintian.

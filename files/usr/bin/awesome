@@ -1,0 +1,5 @@
+#!/bin/bash
+
+export FBXDG_DE="AWESOME"
+fbautostart
+awesome.real

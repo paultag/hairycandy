@@ -1,0 +1,1 @@
+hairy:Depends=build-essential, pbuilder, sbuild, git-buildpackage, svn-buildpackage

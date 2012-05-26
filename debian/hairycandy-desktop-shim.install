@@ -1,0 +1,4 @@
+usr/bin/awesome
+usr/share/images/hairycandy-desktop/login-background.jpg
+usr/share/gdm/greeter-config/50_hairycandy_base
+usr/share/gdm/greeter-settings/zz_hairycandy.gschema.override

@@ -1,0 +1,37 @@
+set number
+
+set ts=4
+set t_Co=256
+set tabstop=4
+set expandtab
+set autoindent
+set smartindent
+set shiftwidth=4
+set encoding=utf-8
+set hlsearch
+set incsearch
+set modeline
+
+filetype on
+filetype indent on
+filetype plugin on
+
+let python_highlight_all=1
+let python_highlight_space_errors=1
+let python_slow_sync=1
+
+autocmd BufRead,BufNewFile *.json set filetype=json
+command Js silent %!json-pretty
+autocmd FileType json Js
+
+syntax on
+colorscheme wombat256
+
+highlight OverLength  ctermbg=red ctermfg=white guibg=#592929
+highlight TailSpace   ctermbg=red ctermfg=white guibg=#592929
+highlight ColorColumn ctermbg=red ctermfg=white guibg=red
+
+match OverLength /\%81v.\+/
+match TailSpace  /\ \+$/
+
+set colorcolumn=81

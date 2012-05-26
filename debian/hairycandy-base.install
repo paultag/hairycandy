@@ -1,0 +1,10 @@
+etc/vim/*
+etc/bash_completion.d/*
+etc/hairycandy/*
+usr/bin/json-pretty
+usr/share/vim/vimcurrent/plugin/*
+usr/share/vim/vimcurrent/compiler/*
+usr/share/vim/vimcurrent/ftplugin/python/*
+usr/share/vim/vimcurrent/indent/*
+usr/share/vim/vimcurrent/syntax/*
+usr/share/vim/vimcurrent/colors/*

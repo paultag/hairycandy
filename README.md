@@ -12,6 +12,25 @@ dircolor import in your bashrc (if it's above the `bash_completion` include)
 
 It also defines a few aliases:
 
+Warning
+-------
+
+This package is *not* fit for the archive, and it's not going there. While I do
+believe people should trust me, I can't give advice for people to trust me
+blindly. Please read over all the files contained in this package. If anything's
+out of sorts, please ask a local and friendly Debian Developer for advice. If
+there's a problem, a bug or pull request would be nice.
+
+Thanks for being great :)
+
+Building and installing
+-----------------------
+
+To create some debs for your system, just run:
+
+    dpkg-buildpackage -us -uc -b
+    sudo dpkg -i ../*.deb
+
 Alias List
 ----------
 

@@ -1,7 +1,5 @@
 addon: hairycandy
 description: "swag out with hairy candy"
-basedir: /usr/share/vim-scripts/
-disabledby: "let loaded_hairycandy = 1"
 files:
   - indent/python.vim
   - syntax/json.vim

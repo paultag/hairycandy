@@ -21,6 +21,8 @@ blindly. Please read over all the files contained in this package. If anything's
 out of sorts, please ask a local and friendly Debian Developer for advice. If
 there's a problem, a bug or pull request would be nice.
 
+This is also not up to vim policy. I know this, patches welcome.
+
 Thanks for being great :)
 
 Building and installing

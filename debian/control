@@ -46,7 +46,7 @@ Description: package for making vim a bit more compfy
  .
  Extra line to trick lintian.
 
-Package: hairycandy-serving-suggestion
+Package: hairycandy-serving-suggestions
 Architecture: all
 Depends: ${shlibs:Depends}, ${misc:Depends}, ${hairy:Depends}
 Description: metapackage for the whole kit and kaboodle

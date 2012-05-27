@@ -35,3 +35,13 @@ Description: package for the development setup
  mind to all this. Don't worry about it.
  .
  Extra line to trick lintian.
+
+Package: vim-hairycandy
+Architecture: all
+Depends: ${shlibs:Depends}, ${misc:Depends}, ${hairy:Depends}
+Description: package for making vim a bit more compfy
+ This package is a metapackage for the hairycandy setup.
+ Really, this is just filler-text, you don't have to pay too much
+ mind to all this. Don't worry about it.
+ .
+ Extra line to trick lintian.

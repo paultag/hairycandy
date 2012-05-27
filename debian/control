@@ -26,10 +26,10 @@ Description: metapackage for the development setup
  .
  Extra line to trick lintian.
 
-Package: hairycandy-desktop-shim
+Package: hairycandy-desktop
 Architecture: all
 Depends: ${shlibs:Depends}, ${misc:Depends}, ${hairy:Depends}
-Description: shim for the development setup
+Description: package for the development setup
  This package is a metapackage for the hairycandy setup.
  Really, this is just filler-text, you don't have to pay too much
  mind to all this. Don't worry about it.

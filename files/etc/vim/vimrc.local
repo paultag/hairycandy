@@ -1,5 +1,9 @@
-set number
+"
+" Vim maintainers:
+"  I'm sorry for my sins.
+"
 
+set number
 set ts=4
 set t_Co=256
 set tabstop=4

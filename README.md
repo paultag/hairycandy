@@ -21,59 +21,37 @@ blindly. Please read over all the files contained in this package. If anything's
 out of sorts, please ask a local and friendly Debian Developer for advice. If
 there's a problem, a bug or pull request would be nice.
 
-This is also not up to vim policy. I know this, patches welcome.
+This is also not up to vim policy. I know this.
 
-Thanks for being great :)
+I also ship a etc/vim/vimrc.local file. Don't install this if you have one
+already. Remember, this is mostly stuff for my setup.
 
-Building and installing
------------------------
+Building & installing
+---------------------
 
-To create some debs for your system, just run:
-
+    # OK. Stop. Read me first. Seriously.
+    #
+    # No, really. Read me.
+    #
+    # If you don't know *exactly* who I am, and everything about what I do,
+    # and all that. DO NOT -- I repeat -- DO NOT install this package. No
+    # user should *EVER* install random code from outside the archive. This
+    # breaks the security we all work so hard to create.
+    #
+    # This package also has some *grave* issues (such as how it tacks on some
+    # of it's hacks) for some cases. Please use me with care.
+    #
+    # Remember, question everything, trust no one. Review the code.
+    #
+    # Seriously, by installing a .deb, you've granted my scripts to run as root.
     dpkg-buildpackage -us -uc -b
-    sudo dpkg -i ../*.deb
+    sudo dpkg -i ../*deb
+    sudo apt-get install -f
 
-Alias List
-----------
+Aliases
+-------
 
-    shopt -s extglob
-
-This will set extglobs - stuff like `ls !(Music)`
-
-    alias releasesig='gpg --armor --sign --detach-sig --local=$KEY'
-
-Requires you export a KEY envvar - allows one to sign a tarball when preparing
-a release.
-
-    alias build='dpkg-buildpackage -S -us -uc -sa'
-
-Quick alias to build a Debian source package.
-
-    alias build-s='svn-buildpackage -rfakeroot --svn-ignore-new -uc -us'
-
-Quick alias to build with svn-buildpackage.
-
-    alias sl='ls'
-
-I typo a lot :)
-
-    alias vimr='vim "`ls | shuf -n1`"'
-
-Edit a random file in the directory.
+This ships a lot of hacked in aliases from the `bash_completion`.
 
 Packages
---------
-
-    hairycandy-base
-
-Base install - contains non-GUI apps in the dep, and a few files to help make
-everything fly a bit smoother.
-
-    hairycandy-devel
-
-Development stuff - things like `sbuild`, `pbuilder`, etc.
-
-    hairycandy-desktop
-
-Shim for the desktop. Contains some fixes to make awesome wm XDG aware, a bit of
-a facelift for GDM (or, just a quick tweak :) ), and a few other nifty deps.
+---------

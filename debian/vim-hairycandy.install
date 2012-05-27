@@ -2,3 +2,4 @@ usr/share/vim/addons/colors/*
 usr/share/vim/addons/indent/*
 usr/share/vim/addons/syntax/*
 usr/share/vim/registry/vim-hairycandy.yaml
+etc/vim/vimrc.local

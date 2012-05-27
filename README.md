@@ -73,7 +73,7 @@ everything fly a bit smoother.
 
 Development stuff - things like `sbuild`, `pbuilder`, etc.
 
-    hairycandy-desktop-shim
+    hairycandy-desktop
 
 Shim for the desktop. Contains some fixes to make awesome wm XDG aware, a bit of
 a facelift for GDM (or, just a quick tweak :) ), and a few other nifty deps.

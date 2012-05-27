@@ -1,13 +1,16 @@
 #!/usr/bin/make -f
 
-SUBSTVARSD=debian/substvars.d
+SUBSTVARSD=debian/substvars.json.d
+SUBSTVARST=debian/substvars.d
 
 %:
 	dh $@
 
 override_dh_gencontrol:
 	# OK. We need to add in our local overlay to the substvars.
+	mkdir $(SUBSTVARST)
 	set -e; for x in `ls $(SUBSTVARSD)`; do \
-		cat $(SUBSTVARSD)/$$x >> debian/$$x; \
+		./debian/bin/gensubstvars $$x > $(SUBSTVARST)/$$x; \
+		cat $(SUBSTVARST)/$$x >> debian/$$x; \
 	done
 	dh_gencontrol

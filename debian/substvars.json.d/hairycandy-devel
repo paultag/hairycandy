@@ -1,0 +1,10 @@
+{
+    "dependencies": [
+        "build-essential",
+        "pbuilder",
+        "sbuild",
+        "git-buildpackage",
+        "svn-buildpackage",
+        "ubuntu-dev-tools"
+    ]
+}

@@ -1,0 +1,8 @@
+{
+    "dependencies": [
+        "awesome",
+        "fbautostart",
+        "gdm3",
+        "redshift"
+    ]
+}

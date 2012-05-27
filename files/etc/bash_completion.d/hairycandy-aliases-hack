@@ -3,3 +3,5 @@ shopt -s extglob
 alias releasesig='gpg --armor --sign --detach-sig --local=$KEY'
 alias sl='ls'
 alias vimr='vim "`ls | shuf -n1`"'
+alias ll='ls -l'
+alias l='ls'

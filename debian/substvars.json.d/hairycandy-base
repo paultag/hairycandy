@@ -3,6 +3,7 @@
         "bzr",
         "subversion",
         "git",
-        "vim"
+        "vim",
+        "python"
     ]
 }

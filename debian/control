@@ -8,7 +8,8 @@ Homepage: http://pault.ag/
 
 Package: hairycandy-base
 Architecture: all
-Depends: ${shlibs:Depends}, ${misc:Depends}, ${hairy:Depends}, python
+Recommends: vim-hairycandy
+Depends: ${shlibs:Depends}, ${misc:Depends}, ${hairy:Depends}
 Description: base package for hairy candy
  This package is a metapackage for the hairycandy setup.
  Really, this is just filler-text, you don't have to pay too much

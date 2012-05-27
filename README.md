@@ -34,7 +34,7 @@ Building & installing
     # No, really. Read me.
     #
     # If you don't know *exactly* who I am, and everything about what I do,
-    # and all that. DO NOT -- I repeat -- DO NOT install this package. No
+    # and all that, DO NOT -- I repeat -- DO NOT install this package. No
     # user should *EVER* install random code from outside the archive. This
     # breaks the security we all work so hard to create.
     #

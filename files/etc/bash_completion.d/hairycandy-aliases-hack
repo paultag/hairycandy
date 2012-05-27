@@ -1,8 +1,5 @@
 shopt -s extglob
 
 alias releasesig='gpg --armor --sign --detach-sig --local=$KEY'
-alias build='dpkg-buildpackage -S -us -uc -sa'
-alias build-s='svn-buildpackage -rfakeroot --svn-ignore-new -uc -us'
-alias doublebuild='dpkg-buildpackage -B && dpkg-buildpackage -S'
 alias sl='ls'
 alias vimr='vim "`ls | shuf -n1`"'

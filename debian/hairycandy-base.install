@@ -1,5 +1,6 @@
 etc/vim/*
-etc/bash_completion.d/*
+etc/bash_completion.d/hairycandy-dircolors-hack
+etc/bash_completion.d/hairycandy-aliases-hack
 etc/hairycandy/*
 usr/bin/json-pretty
 usr/share/vim/vimcurrent/plugin/*

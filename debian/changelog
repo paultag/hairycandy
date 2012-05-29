@@ -1,3 +1,9 @@
+hairycandy (1.0.1) wicked; urgency=low
+
+  * gdm3 --> gdm3 | gdm
+
+ -- Paul Tagliamonte <paultag@ubuntu.com>  Tue, 29 May 2012 09:26:25 -0400
+
 hairycandy (1.0.0) wicked; urgency=low
 
   * Initial release.

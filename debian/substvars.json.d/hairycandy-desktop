@@ -2,7 +2,7 @@
     "dependencies": [
         "awesome",
         "fbautostart",
-        "gdm3",
+        "gdm3 | gdm",
         "redshift"
     ]
 }

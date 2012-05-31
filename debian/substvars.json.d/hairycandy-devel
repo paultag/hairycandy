@@ -5,6 +5,7 @@
         "sbuild",
         "git-buildpackage",
         "svn-buildpackage",
-        "ubuntu-dev-tools"
+        "ubuntu-dev-tools",
+        "sb"
     ]
 }

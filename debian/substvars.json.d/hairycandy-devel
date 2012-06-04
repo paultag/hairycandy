@@ -1,11 +1,9 @@
 {
     "dependencies": [
-        "build-essential",
-        "pbuilder",
-        "sbuild",
+        "packaging-dev",
+        "dh-autoreconf", 
         "git-buildpackage",
         "svn-buildpackage",
-        "ubuntu-dev-tools",
-        "sb"
+        "sbuild"
     ]
 }

@@ -4,6 +4,7 @@
         "dh-autoreconf", 
         "git-buildpackage",
         "svn-buildpackage",
-        "sbuild"
+        "sbuild",
+        "sb"
     ]
 }

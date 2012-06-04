@@ -1,7 +1,7 @@
 {
     "dependencies": [
         "packaging-dev",
-        "dh-autoreconf", 
+        "dh-autoreconf",
         "git-buildpackage",
         "svn-buildpackage",
         "sbuild",

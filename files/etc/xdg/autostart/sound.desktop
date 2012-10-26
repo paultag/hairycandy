@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=GSA
+Comment=GSA
+Exec=gnome-sound-applet
+Terminal=false
+Type=Application
+StartupNotify=false
+OnlyShowIn=AWESOME;

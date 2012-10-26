@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=GSM
+Comment=GSM
+Exec=gnome-settings-daemon
+Terminal=false
+Type=Application
+StartupNotify=false
+OnlyShowIn=AWESOME;

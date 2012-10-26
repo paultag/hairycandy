@@ -52,8 +52,8 @@ Package: hairycandy-desktop
 Architecture: all
 Depends: ${shlibs:Depends}, ${misc:Depends},
  hairycandy-base,
- gdm3,
  cheese,
+ gdm3 | gdm,
  redshift
 Description: desktop metapackage & defaults
  Hairy Candy is a set of configuration packages for Paul's global defaults.

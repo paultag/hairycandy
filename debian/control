@@ -5,6 +5,8 @@ Maintainer: Paul Tagliamonte <paultag@debian.org>
 Build-Depends: debhelper (>= 9)
 Standards-Version: 3.9.3
 Homepage: http://archive.pault.ag/
+Vcs-Git: git://github.com/paultag/hairycandy.git
+Vcs-Browser: https://github.com/paultag/hairycandy
 
 Package: hairycandy-base
 Architecture: all

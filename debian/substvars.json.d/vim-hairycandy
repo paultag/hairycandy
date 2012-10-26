@@ -1,6 +1,0 @@
-{
-    "dependencies": [
-        "vim",
-        "vim-addon-manager"
-    ]
-}

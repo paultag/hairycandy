@@ -1,58 +1,96 @@
 Source: hairycandy
 Section: misc
 Priority: optional
-Maintainer: Paul Tagliamonte <paultag@ubuntu.com>
-Build-Depends: debhelper (>= 9), python
+Maintainer: Paul Tagliamonte <paultag@debian.org>
+Build-Depends: debhelper (>= 9)
 Standards-Version: 3.9.3
-Homepage: http://pault.ag/
+Homepage: http://archive.pault.ag/
 
 Package: hairycandy-base
 Architecture: all
+Depends: ${shlibs:Depends}, ${misc:Depends},
+ python (>= 2.7~)
 Recommends: vim-hairycandy
-Depends: ${shlibs:Depends}, ${misc:Depends}, ${hairy:Depends}
-Description: base package for hairy candy
- This package is a metapackage for the hairycandy setup.
- Really, this is just filler-text, you don't have to pay too much
- mind to all this. Don't worry about it.
+Description: base metapackage for all installs.
+ Hairy Candy is a set of configuration packages for Paul's global defaults.
+ These contain lots and lots of insane defaults that catch Paul's fancy.
  .
- Extra line to trick lintian.
-
-Package: hairycandy-devel
-Architecture: all
-Depends: ${shlibs:Depends}, ${misc:Depends}, ${hairy:Depends}
-Description: package for the development setup
- This package is a metapackage for the hairycandy setup.
- Really, this is just filler-text, you don't have to pay too much
- mind to all this. Don't worry about it.
+ This particular package contains all sorts of base kruft.
  .
- Extra line to trick lintian.
-
-Package: hairycandy-desktop
-Architecture: all
-Depends: ${shlibs:Depends}, ${misc:Depends}, ${hairy:Depends}
-Description: package for the development setup
- This package is a metapackage for the hairycandy setup.
- Really, this is just filler-text, you don't have to pay too much
- mind to all this. Don't worry about it.
- .
- Extra line to trick lintian.
+ Get gross.
 
 Package: vim-hairycandy
 Architecture: all
-Depends: ${shlibs:Depends}, ${misc:Depends}, ${hairy:Depends}
-Description: package for making vim a bit more compfy
- This package is a metapackage for the hairycandy setup.
- Really, this is just filler-text, you don't have to pay too much
- mind to all this. Don't worry about it.
+Depends: ${shlibs:Depends}, ${misc:Depends},
+ vim,
+ vim-addon-manager
+Description: collection of vim plugins and syntax modules.
+ Hairy Candy is a set of configuration packages for Paul's global defaults.
+ These contain lots and lots of insane defaults that catch Paul's fancy.
  .
- Extra line to trick lintian.
+ This particular package contains vim sanity.
+ .
+ Get gross.
+
+Package: hairycandy-awesome
+Architecture: all
+Depends: ${shlibs:Depends}, ${misc:Depends},
+ awesome,
+ fbautostart,
+ hairycandy-desktop
+Description: awesome window manager shim to autostart things.
+ Hairy Candy is a set of configuration packages for Paul's global defaults.
+ These contain lots and lots of insane defaults that catch Paul's fancy.
+ .
+ This particular package contains a shim for awesome window manager.
+ .
+ Get gross.
+
+Package: hairycandy-desktop
+Architecture: all
+Depends: ${shlibs:Depends}, ${misc:Depends},
+ hairycandy-base,
+ gdm3,
+ redshift
+Description: desktop metapackage & defaults.
+ Hairy Candy is a set of configuration packages for Paul's global defaults.
+ These contain lots and lots of insane defaults that catch Paul's fancy.
+ .
+ This particular package contains all sorts of sanity for any desktop
+ machine.
+ .
+ Get gross.
 
 Package: hairycandy-serving-suggestions
 Architecture: all
-Depends: ${shlibs:Depends}, ${misc:Depends}, ${hairy:Depends}
-Description: metapackage for the whole kit and kaboodle
- This package is a metapackage for the hairycandy setup.
- Really, this is just filler-text, you don't have to pay too much
- mind to all this. Don't worry about it.
+Depends: ${shlibs:Depends}, ${misc:Depends},
+ hairycandy-awesome,
+ hairycandy-devel
+Description: global metapackage for how things should tase.
+ Hairy Candy is a set of configuration packages for Paul's global defaults.
+ These contain lots and lots of insane defaults that catch Paul's fancy.
  .
- Extra line to trick lintian.
+ This particular package contains all the kruft we all need for Paul to
+ consider the machine a sane install.
+ .
+ Get gross.
+
+Package: hairycandy-devel
+Architecture: all
+Depends: ${shlibs:Depends}, ${misc:Depends},
+ git,
+ bzr,
+ subversion,
+ sbuild,
+ packaging-dev,
+ git-buildpackage,
+ svn-buildpackage,
+ build-essential
+Description: development metapackage & related stuff.
+ Hairy Candy is a set of configuration packages for Paul's global defaults.
+ These contain lots and lots of insane defaults that catch Paul's fancy.
+ .
+ This particular package contains base kruft for all development
+ focused installs.
+ .
+ Get gross.

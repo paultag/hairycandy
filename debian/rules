@@ -1,21 +1,3 @@
 #!/usr/bin/make -f
-
-SUBSTVARSD=debian/substvars.json.d
-SUBSTVARST=debian/substvars.d
-
 %:
 	dh $@
-
-override_dh_gencontrol:
-	# OK. We need to add in our local overlay to the substvars.
-	mkdir $(SUBSTVARST)
-	set -e; for x in `ls $(SUBSTVARSD)`; do \
-		./debian/bin/gensubstvars $(SUBSTVARSD)/$$x > \
-			$(SUBSTVARST)/$$x.substvars; \
-		cat $(SUBSTVARST)/$$x.substvars >> debian/$$x.substvars; \
-	done
-	dh_gencontrol
-
-override_dh_auto_clean:
-	rm -rvf debian/substvars.d
-	dh_auto_clean

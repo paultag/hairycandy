@@ -1,8 +1,0 @@
-{
-    "dependencies": [
-        "hairycandy-base",
-        "hairycandy-devel",
-        "vim-hairycandy",
-        "hairycandy-desktop"
-    ]
-}

@@ -1,9 +1,0 @@
-{
-    "dependencies": [
-        "bzr",
-        "subversion",
-        "git",
-        "vim",
-        "python"
-    ]
-}

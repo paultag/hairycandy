@@ -1,11 +1,5 @@
-hairycandy (1.0.1) wicked; urgency=low
+hairycandy (1.0.2) wicked; urgency=low
 
-  * gdm3 --> gdm3 | gdm
+  * Initial packaging.
 
- -- Paul Tagliamonte <paultag@ubuntu.com>  Tue, 29 May 2012 09:26:25 -0400
-
-hairycandy (1.0.0) wicked; urgency=low
-
-  * Initial release.
-
- -- Paul Tagliamonte <paultag@ubuntu.com>  Thu, 21 Oct 2010 21:00:59 -0400
+ -- Paul Tagliamonte <paultag@debian.org>  Thu, 25 Oct 2012 22:52:26 -0400

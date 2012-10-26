@@ -4,7 +4,7 @@ set -e
 case "$1" in
     purge|remove|failed-upgrade|disappear|abort-install|abort-upgrade)
         echo "Removing diversion."
-        dpkg-divert --package hairycandy-desktop --remove --rename \
+        dpkg-divert --package hairycandy-awesome --remove --rename \
                     --divert /usr/bin/awesome.real /usr/bin/awesome
     ;;
     upgrade)

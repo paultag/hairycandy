@@ -5,7 +5,7 @@ set -e
 case "$1" in
     install)
         echo "Adding diversion."
-        dpkg-divert --package hairycandy-desktop --add --rename \
+        dpkg-divert --package hairycandy-awesome --add --rename \
                     --divert /usr/bin/awesome.real /usr/bin/awesome
     ;;
     upgrade)

@@ -1,0 +1,11 @@
+tmp
+files
+*substvars
+*debhelper.log
+vim-hairycandy
+hairycandy-base
+hairycandy-devel
+hairycandy-desktop
+hairycandy-awesome
+dput-ng-hairycandy
+hairycandy-serving-suggestions

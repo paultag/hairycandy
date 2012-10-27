@@ -1,7 +1,7 @@
 {
     "allow_unsigned_uploads": true, 
     "fqdn": "pault.ag", 
-    "incoming": "/home/tag/incoming", 
+    "incoming": "/srv/archive.pault.ag/incoming", 
     "meta": "debian", 
     "method": "sftp"
 }

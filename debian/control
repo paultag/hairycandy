@@ -117,3 +117,16 @@ Description: dput-ng targets for paul's setup
  while.
  .
  Get gross.
+
+Package: hairycandy-plymouth
+Architecture: all
+Depends: ${shlibs:Depends}, ${misc:Depends},
+ plymouth,
+ plymouth-drm
+Description: plymouth bootthingers.
+ Hairy Candy is a set of configuration packages for Paul's global defaults.
+ These contain lots and lots of insane defaults that catch Paul's fancy.
+ .
+ This particular package contains boot sexyness.
+ .
+ Get gross.

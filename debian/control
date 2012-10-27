@@ -14,7 +14,8 @@ Depends: ${shlibs:Depends}, ${misc:Depends},
  screen,
  mutt-patched,
  heirloom-mailx,
- python (>= 2.7~)
+ python (>= 2.7~),
+ virtualenvwrapper
 Recommends: vim-hairycandy
 Description: base metapackage for all installs
  Hairy Candy is a set of configuration packages for Paul's global defaults.
@@ -58,7 +59,9 @@ Depends: ${shlibs:Depends}, ${misc:Depends},
  cheese,
  gdm3 | gdm,
  seahorse,
- redshift
+ redshift,
+ gimp,
+ inkscape
 Description: desktop metapackage & defaults
  Hairy Candy is a set of configuration packages for Paul's global defaults.
  These contain lots and lots of insane defaults that catch Paul's fancy.
@@ -99,5 +102,18 @@ Description: development metapackage & related stuff
  .
  This particular package contains base kruft for all development
  focused installs.
+ .
+ Get gross.
+
+Package: dput-ng-hairycandy
+Architecture: all
+Depends: ${shlibs:Depends}, ${misc:Depends},
+ dput-ng
+Description: dput-ng targets for paul's setup
+ Hairy Candy is a set of configuration packages for Paul's global defaults.
+ These contain lots and lots of insane defaults that catch Paul's fancy.
+ .
+ This particular package contains dput targets paul thinks are worth his
+ while.
  .
  Get gross.

@@ -11,6 +11,9 @@ Vcs-Browser: https://github.com/paultag/hairycandy
 Package: hairycandy-base
 Architecture: all
 Depends: ${shlibs:Depends}, ${misc:Depends},
+ screen,
+ mutt-patched,
+ heirloom-mailx,
  python (>= 2.7~)
 Recommends: vim-hairycandy
 Description: base metapackage for all installs
@@ -54,6 +57,7 @@ Depends: ${shlibs:Depends}, ${misc:Depends},
  hairycandy-base,
  cheese,
  gdm3 | gdm,
+ seahorse,
  redshift
 Description: desktop metapackage & defaults
  Hairy Candy is a set of configuration packages for Paul's global defaults.

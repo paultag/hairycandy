@@ -50,6 +50,7 @@ colorscheme wombat256
 map <C-Right> :tabn<CR>
 map <C-Left>  :tabp<CR>
 map <C-n>     :tabe<CR>:o .<CR>
+map <C-w>     :tabc<CR>
 
 let g:netrw_list_hide= '.*\.swp$,.*\.pyc$,.*\.egg-info.*,\.git,\.tox,\.coverage,__pycache__'
 let g:netrw_sort_by= 'time'

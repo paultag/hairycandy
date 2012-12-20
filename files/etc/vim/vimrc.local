@@ -25,8 +25,12 @@ let python_highlight_space_errors=1
 let python_slow_sync=1
 
 autocmd BufRead,BufNewFile *.json set filetype=json
+autocmd BufRead,BufNewFile *.hy set filetype=lisp
 command Js silent %!json-pretty
+command TS silent %s/\s\+$//
 autocmd FileType json Js
+autocmd FileType json TS
+autocmd FileType json 0
 
 syntax on
 colorscheme wombat256
@@ -39,3 +43,23 @@ match OverLength /\%81v.\+/
 match TailSpace  /\ \+$/
 
 set colorcolumn=81
+
+syntax on
+colorscheme wombat256
+
+map <C-Right> :tabn<CR>
+map <C-Left>  :tabp<CR>
+map <C-n>     :tabe<CR>:o .<CR>
+
+let g:netrw_list_hide= '.*\.swp$,.*\.pyc$,.*\.egg-info.*,\.git,\.tox,\.coverage,__pycache__'
+let g:netrw_sort_by= 'time'
+
+
+function! CleverTab()
+    if strpart( getline('.'), 0, col('.')-1 ) =~ '^\s*$'
+        return "\<Tab>"
+    else
+        return "\<C-N>"
+    endif
+endfunction
+inoremap <Tab> <C-R>=CleverTab()<CR>

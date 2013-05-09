@@ -1,4 +1,4 @@
-hairycandy (1.0.3) UNRELEASED; urgency=low
+hairycandy (1.0.3) wicked; urgency=low
 
   * Clojure voodoo
   * other vim tab fixes

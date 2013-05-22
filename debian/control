@@ -29,7 +29,8 @@ Package: vim-hairycandy
 Architecture: all
 Depends: ${shlibs:Depends}, ${misc:Depends},
  vim,
- vim-addon-manager
+ vim-addon-manager,
+Recommends: hairycandy-base
 Description: collection of vim plugins and syntax modules
  Hairy Candy is a set of configuration packages for Paul's global defaults.
  These contain lots and lots of insane defaults that catch Paul's fancy.

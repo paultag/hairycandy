@@ -148,11 +148,11 @@ Depends: ${shlibs:Depends}, ${misc:Depends},
  git-buildpackage,
  svn-buildpackage,
  build-essential
-Description: debian development metapackage & related stuff
+Description: Debian development metapackage & related stuff
  Hairy Candy is a set of configuration packages for Paul's global defaults.
  These contain lots and lots of insane defaults that catch Paul's fancy.
  .
- This particular package contains base kruft for all debian development
+ This particular package contains base kruft for all Debian development
  focused installs.
  .
  Get gross.

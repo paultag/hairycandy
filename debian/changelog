@@ -1,3 +1,11 @@
+hairycandy (1.0.6) UNRELEASED; urgency=medium
+
+  * Move completions to usr/share
+  * Bump standards version, no changes needed.
+  * Fix debian => Debian typo
+
+ -- Paul Tagliamonte <paultag@debian.org>  Thu, 27 Aug 2015 19:41:23 -0400
+
 hairycandy (1.0.5) wicked; urgency=medium
 
   * Remove plymoth metapackage

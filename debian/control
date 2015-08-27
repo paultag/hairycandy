@@ -64,7 +64,8 @@ Depends: ${shlibs:Depends}, ${misc:Depends},
  seahorse,
  redshift,
  gimp,
- inkscape
+ inkscape,
+ gnome,
 Description: desktop metapackage & defaults
  Hairy Candy is a set of configuration packages for Paul's global defaults.
  These contain lots and lots of insane defaults that catch Paul's fancy.
@@ -77,8 +78,7 @@ Description: desktop metapackage & defaults
 Package: hairycandy-serving-suggestions
 Architecture: all
 Depends: ${shlibs:Depends}, ${misc:Depends},
- hairycandy-awesome,
- hairycandy-devel
+ hairycandy-devel,
 Description: global metapackage for how things should tase
  Hairy Candy is a set of configuration packages for Paul's global defaults.
  These contain lots and lots of insane defaults that catch Paul's fancy.
@@ -91,6 +91,55 @@ Description: global metapackage for how things should tase
 Package: hairycandy-devel
 Architecture: all
 Depends: ${shlibs:Depends}, ${misc:Depends},
+ hairycandy-devel-debian,
+ hairycandy-devel-python,
+ hairycandy-devel-golang,
+Description: development metapackage & related stuff
+ Hairy Candy is a set of configuration packages for Paul's global defaults.
+ These contain lots and lots of insane defaults that catch Paul's fancy.
+ .
+ This particular package contains base kruft for all development
+ focused installs.
+ .
+ Get gross.
+
+Package: hairycandy-devel-golang
+Architecture: all
+Depends: ${shlibs:Depends}, ${misc:Depends},
+ golang,
+ dh-golang,
+ dh-make-golang,
+Description: Golang development metapackage & related stuff
+ Hairy Candy is a set of configuration packages for Paul's global defaults.
+ These contain lots and lots of insane defaults that catch Paul's fancy.
+ .
+ This particular package contains base kruft for all Golang development
+ focused installs.
+ .
+ Get gross.
+
+Package: hairycandy-devel-python
+Architecture: all
+Depends: ${shlibs:Depends}, ${misc:Depends},
+ python3,
+ python,
+ python3-virtualenv,
+ python-virtualenv,
+ virtualenvwrapper,
+ python-pip,
+ python3-pip,
+Description: Python development metapackage & related stuff
+ Hairy Candy is a set of configuration packages for Paul's global defaults.
+ These contain lots and lots of insane defaults that catch Paul's fancy.
+ .
+ This particular package contains base kruft for all Python development
+ focused installs.
+ .
+ Get gross.
+
+Package: hairycandy-devel-debian
+Architecture: all
+Depends: ${shlibs:Depends}, ${misc:Depends},
  git,
  bzr,
  subversion,
@@ -99,11 +148,11 @@ Depends: ${shlibs:Depends}, ${misc:Depends},
  git-buildpackage,
  svn-buildpackage,
  build-essential
-Description: development metapackage & related stuff
+Description: debian development metapackage & related stuff
  Hairy Candy is a set of configuration packages for Paul's global defaults.
  These contain lots and lots of insane defaults that catch Paul's fancy.
  .
- This particular package contains base kruft for all development
+ This particular package contains base kruft for all debian development
  focused installs.
  .
  Get gross.
@@ -118,18 +167,5 @@ Description: dput-ng targets for paul's setup
  .
  This particular package contains dput targets paul thinks are worth his
  while.
- .
- Get gross.
-
-Package: hairycandy-plymouth
-Architecture: all
-Depends: ${shlibs:Depends}, ${misc:Depends},
- plymouth,
- plymouth-drm
-Description: plymouth bootthingers.
- Hairy Candy is a set of configuration packages for Paul's global defaults.
- These contain lots and lots of insane defaults that catch Paul's fancy.
- .
- This particular package contains boot sexyness.
  .
  Get gross.

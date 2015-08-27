@@ -1,3 +1,11 @@
+hairycandy (1.0.5) UNRELEASED; urgency=medium
+
+  * Remove plymoth metapackage
+  * Break out -devel into -devel-{debian,python,golang}
+  * switch from awesome to GNOME
+
+ -- Paul Tagliamonte <paultag@debian.org>  Thu, 27 Aug 2015 19:33:43 -0400
+
 hairycandy (1.0.4) wicked; urgency=low
 
   [ Geoffrey Thomas ]

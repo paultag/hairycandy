@@ -169,3 +169,25 @@ Description: dput-ng targets for paul's setup
  while.
  .
  Get gross.
+
+Package: hairycandy-ca
+Architecture: all
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: Debian development metapackage & related stuff
+ Hairy Candy is a set of configuration packages for Paul's global defaults.
+ These contain lots and lots of insane defaults that catch Paul's fancy.
+ .
+ This particular package contains the Bike Shed CA root CA certificate.
+ .
+ Get gross.
+
+Package: hairycandy-keyring
+Architecture: all
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: Debian development metapackage & related stuff
+ Hairy Candy is a set of configuration packages for Paul's global defaults.
+ These contain lots and lots of insane defaults that catch Paul's fancy.
+ .
+ This contains a few OpenPGP keyrings I care about.
+ .
+ Get gross.
